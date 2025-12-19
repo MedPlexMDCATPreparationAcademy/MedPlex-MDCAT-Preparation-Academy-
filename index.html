@@ -1594,7 +1594,7 @@
         .merit-form-label {
             display: block;
             margin-bottom: 1.62px;
-            font-weight: 600;
+            font-weight: 700;
             color: var(--text-primary);
             font-size: 0.405rem;
         }
@@ -1608,6 +1608,7 @@
             background: var(--light);
             color: var(--text-primary);
             transition: var(--transition);
+            font-weight: 600;
         }
 
         .merit-form-input:focus, .merit-form-select:focus {
@@ -1631,6 +1632,7 @@
             font-size: 0.405rem;
             cursor: pointer;
             transition: var(--transition);
+            font-weight: 600;
         }
 
         .district-btn:hover {
@@ -1662,7 +1664,7 @@
         .compact-table th {
             background: var(--primary);
             color: white;
-            font-weight: 600;
+            font-weight: 700;
             position: sticky;
             top: 0;
             z-index: 10;
@@ -1685,12 +1687,13 @@
 
         .name-cell {
             min-width: 97.2px;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .fname-cell {
             font-size: 0.324rem;
             color: var(--text-secondary);
+            font-weight: 600;
         }
 
         .aggregate-cell {
@@ -1708,15 +1711,16 @@
         }
 
         .district-cell {
-            width: 48.6px;
+            width: 64.8px;
             text-align: center;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .marks-cell {
             text-align: center;
             font-size: 0.324rem;
             color: var(--text-secondary);
+            font-weight: 600;
         }
 
         .merit-info-note {
@@ -1731,6 +1735,7 @@
         .merit-info-note h4 {
             color: var(--warning);
             margin-bottom: 3.24px;
+            font-weight: 700;
         }
 
         /* Responsive Design */
@@ -3020,7 +3025,7 @@
                     <div class="merit-info-note">
                         <h4>📢 Important Information</h4>
                         <p>This merit list is made <strong>unofficially</strong> and the data is provided by students. In case of correction, you can update by again filling the form. This portal is made by <strong>Bajaur Doctor for FATA</strong> students.</p>
-                        <p style="margin-top: 3.24px; font-weight: 600;">Made by MedPlex MDCAT Preparation Academy</p>
+                        <p style="margin-top: 3.24px; font-weight: 700;">Made by MedPlex MDCAT Preparation Academy</p>
                     </div>
                     
                     <!-- Form Instructions -->
@@ -3039,7 +3044,7 @@
                     
                     <!-- Student Registration Form -->
                     <div class="merit-form-container">
-                        <h4 style="color: var(--primary); margin-bottom: 4.86px;">Student Information Form</h4>
+                        <h4 style="color: var(--primary); margin-bottom: 4.86px; font-weight: 700;">Student Information Form</h4>
                         
                         <form id="fata-merit-form">
                             <div class="merit-form-grid">
@@ -3064,29 +3069,43 @@
                                 </div>
                                 
                                 <div class="merit-form-group">
-                                    <label class="merit-form-label">FATA District *</label>
+                                    <label class="merit-form-label">FATA District & Status *</label>
                                     <select id="merit-district" class="merit-form-select" required>
-                                        <option value="">Select District</option>
-                                        <option value="Khyber">Khyber</option>
-                                        <option value="Bajaur">Bajaur</option>
-                                        <option value="Upper South Waziristan">Upper South Waziristan</option>
-                                        <option value="Lower South Waziristan">Lower South Waziristan</option>
-                                        <option value="North Waziristan">North Waziristan</option>
-                                        <option value="Mohmand">Mohmand</option>
-                                        <option value="Orakzai">Orakzai</option>
-                                        <option value="Kurram">Kurram</option>
-                                        <option value="FR Peshawar">FR Peshawar</option>
-                                        <option value="FR Kohat">FR Kohat</option>
-                                        <option value="FR Bannu">FR Bannu</option>
-                                        <option value="FR DI Khan">FR DI Khan</option>
-                                        <option value="FR Tank">FR Tank</option>
-                                        <option value="FR Lakki Marwat">FR Lakki Marwat</option>
+                                        <option value="">Select District & Status</option>
+                                        <option value="Bajaur FATA In">Bajaur FATA In</option>
+                                        <option value="Bajaur FATA Out">Bajaur FATA Out</option>
+                                        <option value="Khyber FATA In">Khyber FATA In</option>
+                                        <option value="Khyber FATA Out">Khyber FATA Out</option>
+                                        <option value="Upper South Waziristan FATA In">Upper South Waziristan FATA In</option>
+                                        <option value="Upper South Waziristan FATA Out">Upper South Waziristan FATA Out</option>
+                                        <option value="Lower South Waziristan FATA In">Lower South Waziristan FATA In</option>
+                                        <option value="Lower South Waziristan FATA Out">Lower South Waziristan FATA Out</option>
+                                        <option value="North Waziristan FATA In">North Waziristan FATA In</option>
+                                        <option value="North Waziristan FATA Out">North Waziristan FATA Out</option>
+                                        <option value="Mohmand FATA In">Mohmand FATA In</option>
+                                        <option value="Mohmand FATA Out">Mohmand FATA Out</option>
+                                        <option value="Orakzai FATA In">Orakzai FATA In</option>
+                                        <option value="Orakzai FATA Out">Orakzai FATA Out</option>
+                                        <option value="Kurram FATA In">Kurram FATA In</option>
+                                        <option value="Kurram FATA Out">Kurram FATA Out</option>
+                                        <option value="FR Peshawar FATA In">FR Peshawar FATA In</option>
+                                        <option value="FR Peshawar FATA Out">FR Peshawar FATA Out</option>
+                                        <option value="FR Kohat FATA In">FR Kohat FATA In</option>
+                                        <option value="FR Kohat FATA Out">FR Kohat FATA Out</option>
+                                        <option value="FR Bannu FATA In">FR Bannu FATA In</option>
+                                        <option value="FR Bannu FATA Out">FR Bannu FATA Out</option>
+                                        <option value="FR DI Khan FATA In">FR DI Khan FATA In</option>
+                                        <option value="FR DI Khan FATA Out">FR DI Khan FATA Out</option>
+                                        <option value="FR Tank FATA In">FR Tank FATA In</option>
+                                        <option value="FR Tank FATA Out">FR Tank FATA Out</option>
+                                        <option value="FR Lakki Marwat FATA In">FR Lakki Marwat FATA In</option>
+                                        <option value="FR Lakki Marwat FATA Out">FR Lakki Marwat FATA Out</option>
                                     </select>
                                 </div>
                             </div>
                             
                             <div style="margin: 6.48px 0; border-top: 1px dashed #ddd; padding-top: 6.48px;">
-                                <h5 style="color: var(--secondary); margin-bottom: 3.24px;">Matriculation / O-Level</h5>
+                                <h5 style="color: var(--secondary); margin-bottom: 3.24px; font-weight: 700;">Matriculation / O-Level</h5>
                                 <div class="merit-form-grid">
                                     <div class="merit-form-group">
                                         <label class="merit-form-label">Obtained Marks</label>
@@ -3109,7 +3128,7 @@
                             </div>
                             
                             <div style="margin: 6.48px 0; border-top: 1px dashed #ddd; padding-top: 6.48px;">
-                                <h5 style="color: var(--secondary); margin-bottom: 3.24px;">FSC / A-Level</h5>
+                                <h5 style="color: var(--secondary); margin-bottom: 3.24px; font-weight: 700;">FSC / A-Level</h5>
                                 <div class="merit-form-grid">
                                     <div class="merit-form-group">
                                         <label class="merit-form-label">Obtained Marks</label>
@@ -3132,7 +3151,7 @@
                             </div>
                             
                             <div style="margin: 6.48px 0; border-top: 1px dashed #ddd; padding-top: 6.48px;">
-                                <h5 style="color: var(--primary); margin-bottom: 3.24px;">HEC & MDCAT Details</h5>
+                                <h5 style="color: var(--primary); margin-bottom: 3.24px; font-weight: 700;">HEC & MDCAT Details</h5>
                                 <div class="merit-form-grid">
                                     <div class="merit-form-group">
                                         <label class="merit-form-label">HEC Marks Obtained</label>
@@ -3169,7 +3188,7 @@
                     
                     <!-- District Filter Buttons -->
                     <div style="margin: 9.72px 0;">
-                        <h4 style="color: var(--primary); margin-bottom: 3.24px;">Filter by FATA District</h4>
+                        <h4 style="color: var(--primary); margin-bottom: 3.24px; font-weight: 700;">Filter by FATA District & Status</h4>
                         <div class="district-buttons" id="district-buttons-container">
                             <!-- District buttons will be populated by JavaScript -->
                         </div>
@@ -3178,7 +3197,7 @@
                     <!-- Merit List Table -->
                     <div style="margin-top: 9.72px;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4.86px;">
-                            <h4 style="color: var(--primary);">FATA Merit List (Sorted by HEC Agg)</h4>
+                            <h4 style="color: var(--primary); font-weight: 700;">FATA Merit List (Sorted by HEC Agg)</h4>
                             <button class="btn btn-primary" id="refresh-merit" style="padding: 2.43px 4.86px; font-size: 0.405rem;">
                                 <i class="fas fa-sync-alt"></i> Refresh
                             </button>
@@ -3192,7 +3211,7 @@
                                         <th>Student & F/Name</th>
                                         <th style="text-align: center;">HEC Agg</th>
                                         <th style="text-align: center;">MDCAT Agg</th>
-                                        <th>District</th>
+                                        <th>District & Status</th>
                                         <th>Matric</th>
                                         <th>FSC</th>
                                     </tr>
@@ -3221,10 +3240,10 @@
                             <li>Automatically calculates percentages based on obtained/total marks</li>
                             <li>Updates existing records if same Name, Father Name, and Phone are used</li>
                             <li>Displays data sorted by HEC Aggregate percentage</li>
-                            <li>Allows filtering by specific FATA districts</li>
+                            <li>Allows filtering by specific FATA districts with FATA In/FATA Out status</li>
                             <li>Provides a compact view for easy comparison</li>
                         </ul>
-                        <p style="margin-top: 3.24px; font-weight: 600;">For corrections: Simply resubmit the form with corrected information.</p>
+                        <p style="margin-top: 3.24px; font-weight: 700;">For corrections: Simply resubmit the form with corrected information.</p>
                     </div>
                 </div>
             </div>
@@ -3832,6 +3851,24 @@
         let meritData = [];
         let currentFilter = "";
 
+        // Updated districts with FATA In/Out status
+        const districtsWithStatus = [
+            "Bajaur FATA In", "Bajaur FATA Out",
+            "Khyber FATA In", "Khyber FATA Out",
+            "Upper South Waziristan FATA In", "Upper South Waziristan FATA Out",
+            "Lower South Waziristan FATA In", "Lower South Waziristan FATA Out",
+            "North Waziristan FATA In", "North Waziristan FATA Out",
+            "Mohmand FATA In", "Mohmand FATA Out",
+            "Orakzai FATA In", "Orakzai FATA Out",
+            "Kurram FATA In", "Kurram FATA Out",
+            "FR Peshawar FATA In", "FR Peshawar FATA Out",
+            "FR Kohat FATA In", "FR Kohat FATA Out",
+            "FR Bannu FATA In", "FR Bannu FATA Out",
+            "FR DI Khan FATA In", "FR DI Khan FATA Out",
+            "FR Tank FATA In", "FR Tank FATA Out",
+            "FR Lakki Marwat FATA In", "FR Lakki Marwat FATA Out"
+        ];
+
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize the application
             initApp();
@@ -4048,13 +4085,6 @@
             }
             
             function setupDistrictButtons() {
-                const districts = [
-                    "Khyber", "Bajaur", "Upper South Waziristan", "Lower South Waziristan", 
-                    "North Waziristan", "Mohmand", "Orakzai", "Kurram", 
-                    "FR Peshawar", "FR Kohat", "FR Bannu", "FR DI Khan", 
-                    "FR Tank", "FR Lakki Marwat"
-                ];
-                
                 const container = document.getElementById('district-buttons-container');
                 
                 // Add "All" button
@@ -4070,8 +4100,8 @@
                 });
                 container.appendChild(allBtn);
                 
-                // Add district buttons
-                districts.forEach(district => {
+                // Add district buttons with status
+                districtsWithStatus.forEach(district => {
                     const btn = document.createElement('button');
                     btn.className = 'district-btn';
                     btn.textContent = district;
@@ -4255,12 +4285,12 @@
                         </td>
                         <td class="district-cell">${item.district}</td>
                         <td style="text-align: center;">
-                            <div style="font-size: 0.324rem;">${item.matric.obtained}/${item.matric.total}</div>
-                            <div style="font-weight: 600;">${parseFloat(item.matric.aggregate).toFixed(2)}%</div>
+                            <div style="font-size: 0.324rem; font-weight: 600;">${item.matric.obtained}/${item.matric.total}</div>
+                            <div style="font-weight: 700;">${parseFloat(item.matric.aggregate).toFixed(2)}%</div>
                         </td>
                         <td style="text-align: center;">
-                            <div style="font-size: 0.324rem;">${item.fsc.obtained}/${item.fsc.total}</div>
-                            <div style="font-weight: 600;">${parseFloat(item.fsc.aggregate).toFixed(2)}%</div>
+                            <div style="font-size: 0.324rem; font-weight: 600;">${item.fsc.obtained}/${item.fsc.total}</div>
+                            <div style="font-weight: 700;">${parseFloat(item.fsc.aggregate).toFixed(2)}%</div>
                         </td>
                     `;
                     
